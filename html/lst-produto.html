@@ -1,0 +1,138 @@
+<!doctype html>
+<html language="pt-br">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<thead>
+		<title>mjailton</title>
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="js/datatables/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="js/datatables/css/responsive.dataTables.min.css">
+		<link rel="stylesheet" href="js/datatables/css/style_dataTable.css">
+		<link rel="stylesheet" type="text/css" href="css/auxiliar.css">
+		<link rel="stylesheet" href="css/grade.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--font icones-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		
+		<script src="js/jquery.min.js"></script>
+	</thead>
+	<body>
+		<header class="topo">
+			<div class="conteudo">
+				<a href="" class="mobmenu fas fa-bars"></a>
+				<a href="index.html" class="logo"><img src="img/logo.png"></a>
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="sub"><a href="">Cadastros</a>
+							<ul>
+								<li><a href="lst-clientes.html">Cliente</a></li>
+								<li><a href="lst-produto.html">Produto</a></li>
+							</ul>
+						</li>
+						<li class="sub"><a href="">Estoques</a>
+							<ul>
+								<li><a href="entrada-produto.html">Entradas de produtos</a></li>
+								<li><a href="saida-produto.html">Saída de produtos</a></li>
+							</ul>
+						</li>
+						</li>
+						<li><a href="vendas.html">Vendas</a></li>
+						<li class="sub"><a href="">Consultas</a>
+							<ul>
+								<li><a href="consulta-entrada.html">Entradas</a></li>
+								<li><a href="saida.html">Saída</a></li>
+								<li><a href="movimentacao.html">Movimentações</a></li>
+								<li><a href="consulta-vendas.html">Vendas</a></li>
+								<li><a href="consulta-clientes.html">Cliente</a></li>
+							</ul>
+						</li>
+						<li><a href="">Sair</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="conteudo">
+			<div class="base-form">
+				<div class="radius-8 bg-padrao pt-2 px-4 pb-4">
+					<div class="rows">
+						<div class="col-12 pt-2 d-flex text-between">
+							<h1 class="text-branco h2 mb-0"><i class="fas fa-list m-0 h2 text-amarelo"></i> Lista de produtos</h1>
+							<div>
+								<a href="create-produto.html" class="btn btn-branco d-inline-block"><i class="fas fa-plus-circle"></i> Cadastrar novo</a>
+								<a href="" class="btn btn-vermelho d-inline-block filtro ml-1"><i class="fas fa-filter"></i> Filtrar</a>
+							</div>
+						</div>
+					</div>
+					<div class="mostraFiltro">
+						<div class="rows">
+							<div class="col-6 position-relative">
+								<label class="text-label">Produto</label>
+								<input type="text" name="" class="form-campo">
+								<!--lista de produto-->
+								<div class="listaProdutos" style="display:none">
+									<ul>
+										<li><a href="">Arroz</a></li>
+										<li><a href="">Banana</a></li>
+										<li><a href="">Alface</a></li>
+										<li><a href="">Arroz</a></li>
+										<li><a href="">Banana</a></li>
+										<li><a href="">Alface</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-3">
+								<label class="text-label">Preço</label>
+								<input type="text" name="" class="form-campo">
+							</div>
+							<div class="col-2 mt-4">
+								<input type="submit" name="" value="Buscar" class="btn btn-amarelo width-100">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tabela-responsiva tabela">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" id="dataTable">
+                        <thead>
+                          <tr>
+                            <th>#</th>                
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Estoque inicial</th>
+                            <th>Estoque mínimo</th>
+                            <th>Estoque estadual</th>
+                            <th>Ações</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center">1</td>
+                                <td align="center">Produto</td>
+                                <td align="center">R$ 100,00</td>
+                                <td align="center">1000</td>
+                                <td align="center">5</td>
+                                <td align="center">5</td>
+                                <td align="center">
+										<a href="#" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
+                                    <a href="#" class="btn btn-vermelho btn-auto" title="Excluir Usuário"><i class="ico-excluir"></i> Deletar</a>
+								</td>                                
+                            </tr>
+                                                
+                        </tbody>
+                    </table>
+				</div>
+				
+			</div>
+		</div>
+		
+	<!---->
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="js/datatables/js/dataTables.responsive.min.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/componentes/js_modal.js"></script>
+		<script src="js/componentes/js_data_table.js"></script>
+	</body>
+</html>
