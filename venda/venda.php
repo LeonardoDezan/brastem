@@ -11,13 +11,13 @@
 						<div class="col-5">
 							<div class="bg-padrao alt branco width-100">
 								<label class="label m-0 pb-1 text-branco"><i class="fas fa-asterisk"></i> Cliente</label>
-								<p class="text-branco">MAnoel jailton sousa</p>
+								<p class="text-branco">Sistemy</p>
 							</div>
 						</div>
 						<div class="col-5">
 							<div class="bg-padrao alt branco width-100">
 								<label class="label m-0 pb-1 text-branco"><i class="fas fa-asterisk"></i> Email</label>
-								<p class="text-branco">mjailton@gmail.com</p>
+								<p class="text-branco">compras@sistemy.com.br</p>
 							</div>
 						</div>
 					</div>		
@@ -33,7 +33,7 @@
 						<div class="col-3 mt-3 d-flex">
 							<div class="bg-padrao alt width-100">
 								<label class="label m-0 pb-1"><i class="fas fa-calendar-alt"></i> Data</label>
-								<p class="text-roxo">13/08/2021</p>
+								<p class="text-roxo">--/--/----</p>
 							</div>
 						</div>
 						<div class="col-3 mt-3 d-flex">
@@ -45,7 +45,7 @@
 						<div class="col mt-3 d-flex">
 							<div class="bg-padrao radius-8 p-2 width-100">
 								<label class="label mt-0 py-0 text-branco"><i class="fas fa-dollar-sign"></i> Total</label>
-								<h1 class="text-branco" style="font-weight:300">R$ 5.000,00</h1>
+								<h1 class="text-branco" style="font-weight:300">R$ 00,00</h1>
 							</div>
 						</div>
 					</div>
@@ -106,10 +106,10 @@
                         <tbody>
                             <tr>
                                 <td align="center">1</td>
-                                <td align="center">Redmi Note 7</td>
-                                <td align="center">1</td>
-                                <td align="center">R$ 1.280,00</td>
-                                <td align="center">R$ 1.280,00</td>
+                                <td align="center">STANDARD BRANCO NEVE</td>
+                                <td align="center">2</td>
+                                <td align="center">R$ 300,00</td>
+                                <td align="center">R$ 600,00</td>
                                 <td align="center">
 									<a href="#" class="btn btn-verde" title="Editar Usuário"><i class="ico-editar"></i></a>
                                     <a href="#" class="btn btn-vermelho" title="Excluir Usuário"><i class="ico-excluir"></i></a>

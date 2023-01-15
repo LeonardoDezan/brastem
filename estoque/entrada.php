@@ -57,10 +57,10 @@
                         <tbody>
                             <tr>
                                 <td align="center">1</td>
-                                <td align="center">Redmi Note 7</td>
-                                <td align="center">1</td>
-                                <td align="center">R$ 1.280,00</td>
-                                <td align="center">R$ 1.280,00</td>
+                                <td align="center">ANTIESPUMA</td>
+                                <td align="center">10</td>
+                                <td align="center">R$ 28,00</td>
+                                <td align="center">R$ 280,00</td>
                                 <td align="center">
 									<a href="#" class="btn btn-verde" title="Editar Usuário"><i class="ico-editar"></i></a>
                                     <a href="#" class="btn btn-vermelho" title="Excluir Usuário"><i class="ico-excluir"></i></a>

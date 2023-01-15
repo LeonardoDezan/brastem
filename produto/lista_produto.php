@@ -44,20 +44,22 @@
                             <th>#</th>                
                             <th>Produto</th>
                             <th>Preço</th>
-                            <th>Estoque inicial</th>
+                            <th>Estoque inicial em KG</th>
                             <th>Estoque mínimo</th>
-                            <th>Estoque estadual</th>
+                            <th>Estoque Atual</th>
+							<th>teste</th>
                             <th>Ações</th>
                           </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td align="center">1</td>
-                                <td align="center">Produto</td>
+                                <td align="center">ANTIESPUMA</td>
                                 <td align="center">R$ 100,00</td>
-                                <td align="center">1000</td>
+                                <td align="center">100</td>
                                 <td align="center">5</td>
                                 <td align="center">5</td>
+								<td align="center">teste</td>
                                 <td align="center">
 										<a href="#" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
                                     <a href="#" class="btn btn-vermelho btn-auto" title="Excluir Usuário"><i class="ico-excluir"></i> Deletar</a>
