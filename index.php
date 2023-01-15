@@ -22,7 +22,25 @@
 	<body>
 		<div class="conteudo">
 			<section class="caixa">
-				<?php include "home.php" ?>
+				<?php
+				$link = isset($_GET["link"]) ? $_GET["link"] : null;
+				$page[1] = "home.php";
+				$page[2] = "cliente/index.php";
+				$page[3] = "cliente/create.php";
+
+			if ($link){
+					if (file_exists($page[$link])){
+						include $page[$link];
+					}else{
+						include "home.php"; 	
+					}								
+			}else{
+					include "home.php";
+			}
+
+				
+				
+				?>
 			</section>
 		</div>
 		

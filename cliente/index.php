@@ -4,7 +4,7 @@
 						<div class="col-12 pt-2 d-flex text-between">
 							<h1 class="text-branco h2 mb-0"><i class="fas fa-list m-0 h2 text-amarelo"></i> Lista de clientes</h1>
 							<div>
-								<a href="create-cliente.html" class="btn btn-branco d-inline-block"><i class="fas fa-plus-circle"></i> Cadastrar novo</a>
+								<a href="index.php?link=3" class="btn btn-branco d-inline-block"><i class="fas fa-plus-circle"></i> Cadastrar novo</a>
 								<a href="" class="btn btn-vermelho d-inline-block filtro ml-1"><i class="fas fa-filter"></i> Filtrar</a>
 							</div>
 						</div>

@@ -7,7 +7,7 @@
 						<li><a href="index.html">Home</a></li>
 						<li class="sub"><a href="">Cadastros</a>
 							<ul>
-								<li><a href="lst-clientes.html">Cliente</a></li>
+								<li><a href="index.php?link=2">Cliente</a></li>
 								<li><a href="lst-produto.html">Produto</a></li>
 							</ul>
 						</li>
