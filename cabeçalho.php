@@ -1,7 +1,7 @@
 		<header class="topo">
 			<div class="conteudo">
 				<a href="" class="mobmenu fas fa-bars"></a>
-				<a href="index.php?link=1" class="logo"><img src="img/logo.png"></a>
+				<a href="index.php?link=1" class="logosistemy">< sistemy/></a>
 				<nav class="menu">
 					<ul>
 						<li><a href="index.php?link=1">Home</a></li>

@@ -2,8 +2,8 @@
 <html language="pt-br">
 	
 <head>
-	<title>mjailton</title>
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+	<title>< sistemy/></title>
+	<link rel="shortcut icon" href="img/favicon_sistemy.png" type="image/x-icon" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">

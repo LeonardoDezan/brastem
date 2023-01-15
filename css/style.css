@@ -76,8 +76,16 @@ body.base-login .conteudo {
 	float:left;
 }
 .topo .logo img{
-	width:100%
+	width:100%;
+	
 }
+
+.logosistemy{
+	font-size: 34px;
+	color: rgb(226, 226, 226);
+}
+
+
 /*centraliza o conteudo do topo
 .topo .conteudo{width:100%;padding:0 8%}*/
 

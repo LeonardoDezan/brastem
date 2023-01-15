@@ -2,7 +2,7 @@
 					<div class="grade-home">
 					<div class="rows">
 						<div class="col-12">
-							<span class="h3 mb-0 text-roxo">Olá, Jailton.</span>
+							<span class="h3 mb-0 text-roxo">Olá,</span>
 							<span class="h4 text-cinza">Seja bem-vindo ao seu controle de estoque!</span>
 						</div>
 						<div class="col-12 mt-4">
@@ -68,7 +68,7 @@
 								<div class="cx-body d-flex align-items-center text-between">
 									<i><img src="img/warning.svg" alt="" class="icone-problemas"></i>
 										<small>Itens com estoque baixo</small>
-										<strong>50</strong>
+										<strong>0</strong>
 								</div>
 							</article>
 						</a>
@@ -77,7 +77,7 @@
 								<div class="cx-body d-flex align-items-center text-between">
 									<i><img src="img/warning.svg" alt="" class="icone-problemas"></i>
 										<small>Produtos sem saída</small>
-										<strong>350</strong>
+										<strong>0</strong>
 								</div>
 							</article>
 						</a>
@@ -86,7 +86,7 @@
 								<div class="cx-body d-flex align-items-center text-between">
 									<i><img src="img/warning.svg" alt="" class="icone-problemas"></i>
 										<small>Ítens fora da validade</small>
-										<strong>2350</strong>
+										<strong>0</strong>
 								</div>
 							</article>
 						</a>
