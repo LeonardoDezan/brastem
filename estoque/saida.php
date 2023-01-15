@@ -1,60 +1,4 @@
-<!doctype html>
-<html language="pt-br">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="utf-8">
-	<thead>
-		<title>mjailton</title>
-		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="js/datatables/css/jquery.dataTables.min.css">
-		<link rel="stylesheet" href="js/datatables/css/responsive.dataTables.min.css">
-		<link rel="stylesheet" href="js/datatables/css/style_dataTable.css">
-		<link rel="stylesheet" type="text/css" href="css/auxiliar.css">
-		<link rel="stylesheet" href="css/grade.css">
-		<link rel="stylesheet" href="css/style.css">
-		<!--font icones-->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-		
-		<script src="js/jquery.min.js"></script>
-	</thead>
-	<body>
-		<header class="topo">
-			<div class="conteudo">
-				<a href="" class="mobmenu fas fa-bars"></a>
-				<a href="index.html" class="logo"><img src="img/logo.png"></a>
-				<nav class="menu">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li class="sub"><a href="">Cadastros</a>
-							<ul>
-								<li><a href="lst-clientes.html">Cliente</a></li>
-								<li><a href="lst-produto.html">Produto</a></li>
-							</ul>
-						</li>
-						<li class="sub"><a href="">Estoques</a>
-							<ul>
-								<li><a href="entrada-produto.html">Entradas de produtos</a></li>
-								<li><a href="saida-produto.html">Saída de produtos</a></li>
-							</ul>
-						</li>
-						</li>
-						<li><a href="vendas.html">Vendas</a></li>
-						<li class="sub"><a href="">Consultas</a>
-							<ul>
-								<li><a href="consulta-entrada.html">Entradas</a></li>
-								<li><a href="saida.html">Saída</a></li>
-								<li><a href="movimentacao.html">Movimentações</a></li>
-								<li><a href="consulta-vendas.html">Vendas</a></li>
-								<li><a href="consulta-clientes.html">Cliente</a></li>
-							</ul>
-						</li>
-						<li><a href="">Sair</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<div class="conteudo">
-			<div class="base-form">
+<div class="base-form">
 				<div class="radius-8 bg-padrao pt-2 px-4 pb-4">
 					<div class="rows">
 						<div class="col-12 pt-2 d-flex text-between">
@@ -128,14 +72,3 @@
 				</div>
 				
 			</div>
-		</div>
-		
-	<!---->
-		<script src="js/jquery-ui.js"></script>
-		<script src="js/datatables/js/jquery.dataTables.min.js"></script>
-		<script src="js/datatables/js/dataTables.responsive.min.js"></script>
-		<script src="js/js.js"></script>
-		<script src="js/componentes/js_modal.js"></script>
-		<script src="js/componentes/js_data_table.js"></script>
-	</body>
-</html>

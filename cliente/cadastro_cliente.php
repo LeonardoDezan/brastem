@@ -21,7 +21,8 @@
 									<small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>email</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small>
 				
 								</div>
-																	
+								
+								
 							<div class="col-3 mb-3">
 								<input type="submit"  value="Cadastrar" class="btn btn-amarelo width-100">
 							</div>									

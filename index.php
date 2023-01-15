@@ -25,10 +25,19 @@
 				<?php
 				$link = isset($_GET["link"]) ? $_GET["link"] : null;
 				$page[1] = "home.php";
-				$page[2] = "cliente/index.php";
-				$page[3] = "cliente/create.php";
+				$page[2] = "cliente/lista_cliente.php";
+				$page[3] = "cliente/cadastro_cliente.php";
+				$page[4] = "produto/lista_produto.php";
+				$page[5] = "produto/cadastro_produto.php";
+				$page[6] = "estoque/entrada.php";
+				$page[7] = "estoque/saida.php";
+				$page[8] = "venda/venda.php";
+				$page[9] = "consulta/cons_entrada.php";
+				$page[10] = "consulta/cons_saida.php";
+				$page[11] = "consulta/cons_venda.php";
+				$page[12] = "consulta/movimentacao.php";
 
-			if ($link){
+			if ($link != null && $link <= count($page)){
 					if (file_exists($page[$link])){
 						include $page[$link];
 					}else{
