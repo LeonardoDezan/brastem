@@ -16,18 +16,24 @@ class CalculadoraController extends Controller{
 
     }
 
-    public function subtrair($a, $b){
+    public function subtrair(){
         $objOperacao = new Operacao;
+        $a = $_POST["a"];
+        $b = $_POST["b"];
         echo $objOperacao->subtrair($a, $b);
     }
 
-    public function multiplicar($a, $b){
+    public function multiplicar(){
         $objOperacao = new Operacao;
+        $a = $_POST["a"];
+        $b = $_POST["b"];
         echo $objOperacao->multiplicar($a, $b);
     }
 
-    public function dividir($a, $b=0){
+    public function dividir(){
         $objOperacao = new Operacao;
+        $a = $_POST["a"];
+        $b = $_POST["b"];
         echo $objOperacao->dividir($a, $b);
     }
 }
