@@ -3,7 +3,10 @@ namespace app\core;
 
 class Controller{
      public function load($viewName, $viewData=array()){
-       extract($viewData); 
+        if ($viewData){
+          extract($viewData);
+        }
+           
        include "app/views/" . $viewName .".php";
    }
 }
