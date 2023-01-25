@@ -12,6 +12,8 @@
         Valor de b:<input type="text" name="b">
         <input type="submit" value="enviar">
     </form>
+    <br>
+    <b>O resultado é: </b>
     
 </body>
 </html>
