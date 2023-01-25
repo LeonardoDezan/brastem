@@ -8,12 +8,18 @@
 </head>
 <body>
     <form method="Post" action="<?php echo URL_BASE . "calculadora/somar" ?>" >
-        Valor de a:<input type="text" name="a">
-        Valor de b:<input type="text" name="b">
+        Valor de a:<input type="text" name="a" value="<?php echo isset($a) ? $a : ""; ?>">
+        Valor de b:<input type="text" name="b" value="<?php echo isset($b) ? $b : ""; ?>">
         <input type="submit" value="enviar">
     </form>
     <br>
-    <b>O resultado é: </b>
+
+    <?php if (isset($resultado)){
+            echo "o resultado é: " . $resultado;
+    } ?>
+    
+    
+
     
 </body>
 </html>

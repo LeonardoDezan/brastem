@@ -12,8 +12,11 @@ class CalculadoraController extends Controller{
         $objOperacao = new Operacao;
         $a = $_POST["a"];
         $b = $_POST["b"];
-        echo $objOperacao->somar($a, $b);
-
+        $dados["b"] = $b;
+        $dados["a"] = $a;
+        $dados ["resultado"] = $objOperacao->somar($a, $b);
+        //print_r($dados);
+        $this->load ("ViewCalculadora", $dados);
     }
 
     public function subtrair(){
