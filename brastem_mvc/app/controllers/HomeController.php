@@ -1,9 +1,11 @@
 <?php
 namespace app\controllers;
+use app\core\Controller;
 
-class HomeController{
+class HomeController extends Controller{
     
    public function index(){
-       echo "<br>Controller padrão<br>";
+       $this -> load("template");
    } 
+
 }

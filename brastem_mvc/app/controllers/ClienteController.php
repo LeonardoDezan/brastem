@@ -6,7 +6,8 @@ use app\core\Controller;
 
 class ClienteController extends Controller{
     public function index(){
-        $this -> load("cadastro_cliente");
+        $dados = ["view"] = "lista_cliente";
+        $this -> load("template", $dados);
     }
 }
 

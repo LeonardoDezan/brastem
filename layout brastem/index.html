@@ -1,0 +1,166 @@
+<!doctype html>
+<html language="pt-br">
+	
+<head>
+	<title>mjailton</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="js/datatables/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="js/datatables/css/responsive.dataTables.min.css">
+	<link rel="stylesheet" href="js/datatables/css/style_dataTable.css">
+	<link rel="stylesheet" type="text/css" href="css/auxiliar.css">
+	<link rel="stylesheet" href="css/grade.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--font icones-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<script src="js/jquery.min.js"></script>
+</head>
+	<body>
+		<header class="topo">
+			<div class="conteudo">
+				<a href="" class="mobmenu fas fa-bars"></a>
+				<a href="index.html" class="logo"><img src="img/logo.png"></a>
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="sub"><a href="">Cadastros</a>
+							<ul>
+								<li><a href="lst-clientes.html">Cliente</a></li>
+								<li><a href="lst-produto.html">Produto</a></li>
+							</ul>
+						</li>
+						<li class="sub"><a href="">Estoques</a>
+							<ul>
+								<li><a href="entrada-produto.html">Entradas de produtos</a></li>
+								<li><a href="saida-produto.html">Saída de produtos</a></li>
+							</ul>
+						</li>
+						</li>
+						<li><a href="vendas.html">Vendas</a></li>
+						<li class="sub"><a href="">Consultas</a>
+							<ul>
+								<li><a href="consulta-entrada.html">Entradas</a></li>
+								<li><a href="saida.html">Saída</a></li>
+								<li><a href="movimentacao.html">Movimentações</a></li>
+								<li><a href="consulta-vendas.html">Vendas</a></li>
+								<li><a href="consulta-clientes.html">Cliente</a></li>
+							</ul>
+						</li>
+						<li><a href="">Sair</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="conteudo">
+			<section class="caixa">
+				<div class="base-home mt-4 pb-5 mb-5">
+					<div class="grade-home">
+					<div class="rows">
+						<div class="col-12">
+							<span class="h3 mb-0 text-roxo">Olá, Jailton.</span>
+							<span class="h4 text-cinza">Seja bem-vindo ao seu controle de estoque!</span>
+						</div>
+						<div class="col-12 mt-4">
+							<strong class="h5 text-roxo">RELATÓRIOS DISPONÍVEIS</strong>
+						</div>
+						<a href="" class="col-3 mb-3 d-flex">
+							<article class="cx-home width-100">
+								<div class="cx-body">
+									<i><img src="img/produtos-cadastrados.svg" alt="produtos cadastrados"></i>
+										<span>Produtos cadastrados</span>
+									
+									<div class="d-flex text-end">
+										<img src="img/arrow-left.svg" alt="" class="icone-acesso">
+									</div>
+								</div>
+							</article>
+						</a>
+						<a href="" class="col-3 mb-3 d-flex">
+							<article class="cx-home width-100">
+								<div class="cx-body">
+									<i><img src="img/valor.svg" alt="valor atual do estoque"></i>
+										<span> Valor atual do estoque</span>
+									
+									<div class="d-flex text-end">
+										<img src="img/arrow-left.svg" alt="" class="icone-acesso">
+									</div>
+								</div>
+							</article>
+						</a>
+						<a href="" class="col-3 mb-3 d-flex">
+							<article class="cx-home width-100">
+								<div class="cx-body">
+									<i><img src="img/preco-medio.svg" alt="preco-medio"></i>
+										<span>Preço médio</span>
+										<br>
+									<div class="d-flex text-end">
+										<img src="img/arrow-left.svg" alt="" class="icone-acesso">
+									</div>
+								</div>
+							</article>
+						</a>
+						<a href="" class="col-3 mb-3 d-flex">
+							<article class="cx-home width-100">
+								<div class="cx-body">
+									<i><img src="img/versao-sistema.svg" alt="versão do sistema"></i>
+										<span>Versão do sistema</span>
+									
+									<div class="d-flex text-end">
+										<img src="img/arrow-left.svg" alt="" class="icone-acesso">
+									</div>
+								</div>
+							</article>
+						</a>
+					
+						<div class="col-12 mt-3 pb-3"><i class="border-top d-block"></i></div>
+						
+						<div class="col-12 mt-3">
+							<strong class="h5 text-roxo">PROBLEMAS ENCONTRADOS</strong>
+						</div>
+						
+						<a href="" class="col-4 mb-3 d-flex">
+							<article class="cx-home width-100 erros">
+								<div class="cx-body d-flex align-items-center text-between">
+									<i><img src="img/warning.svg" alt="" class="icone-problemas"></i>
+										<small>Itens com estoque baixo</small>
+										<strong>50</strong>
+								</div>
+							</article>
+						</a>
+						<a href="" class="col-4 mb-3 d-flex">
+							<article class="cx-home width-100 erros">
+								<div class="cx-body d-flex align-items-center text-between">
+									<i><img src="img/warning.svg" alt="" class="icone-problemas"></i>
+										<small>Produtos sem saída</small>
+										<strong>350</strong>
+								</div>
+							</article>
+						</a>
+						<a href="" class="col-4 mb-3 d-flex">
+							<article class="cx-home width-100 erros">
+								<div class="cx-body d-flex align-items-center text-between">
+									<i><img src="img/warning.svg" alt="" class="icone-problemas"></i>
+										<small>Ítens fora da validade</small>
+										<strong>2350</strong>
+								</div>
+							</article>
+						</a>
+					</div>
+					</div>
+					
+				</div>
+			</section>
+		</div>
+		
+	<!---->
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="js/datatables/js/dataTables.responsive.min.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/componentes/js_modal.js"></script>
+		<script src="js/componentes/js_data_table.js"></script>
+	</body>
+</html>
