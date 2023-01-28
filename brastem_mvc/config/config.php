@@ -1,7 +1,7 @@
 <?php
 
 define("SERVIDOR", "localhost");
-define("BANCO", "portoseguro_paginacao");
+define("BANCO", "brastem_db");
 define("USUARIO", "root");
 define("SENHA", "");
 

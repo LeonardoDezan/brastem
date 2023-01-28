@@ -15,6 +15,7 @@
 								<label class="text-label">Cliente</label>
 								<input type="text" name="" class="form-campo">
 								<!--lista de cliente-->
+								<!-- Novos parametros para filtro -->
 								<div class="listaClientes" style="display:none">
 									<ul>
 										<li><a href="">Arroz</a></li>
@@ -50,36 +51,17 @@
                           </tr>
                         </thead>
                         <tbody>
+							<?php foreach($lista as $clientes) { ?> 
                             <tr>
-                                <td align="center">1</td>
-                                <td align="center">Teste 1</td>
-                                <td align="center"><a href="" class="text-azul"><i class="fas fa-envelope"></i> teste1@gmail.com</a></td>
+                                <td align="center"><?php echo $clientes->id_clientes; ?></td>
+                                <td align="center"><?php echo $clientes->nome_cliente; ?></td>
+                                <td align="center"><a href="" class="text-azul"><i class="fas fa-envelope"></i><?php echo $clientes->email; ?></a></td>
                                 <td align="center">
 									<a href="#" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
                                     <a href="#" class="btn btn-vermelho btn-auto" title="Excluir Usuário"><i class="ico-excluir"></i> Deletar</a>
 								</td>                                
-                            </tr>
-                                   
-                            <tr>
-                                <td align="center">2</td>
-                                <td align="center">Teste 2</td>
-                                <td align="center"><a href="" class="text-azul"><i class="fas fa-envelope"></i> teste2@gmail.com</a></td>
-                                <td align="center">
-									<a href="#" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
-                                    <a href="#" class="btn btn-vermelho btn-auto" title="Excluir Usuário"><i class="ico-excluir"></i> Deletar</a>
-								</td>                                
-                            </tr>
-                                   
-                            <tr>
-                                <td align="center">3</td>
-                                <td align="center">Teste 3</td>
-                                <td align="center"><a href="" class="text-azul"><i class="fas fa-envelope"></i> teste3@gmail.com</a></td>
-                                <td align="center">
-									<a href="#" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
-                                    <a href="#" class="btn btn-vermelho btn-auto" title="Excluir Usuário"><i class="ico-excluir"></i> Deletar</a>
-								</td>                                
-                            </tr>
-                                                 
+                            </tr>     
+							<?php } ?>
                         </tbody>
                     </table>
 				</div>
