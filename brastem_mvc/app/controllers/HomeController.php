@@ -5,7 +5,8 @@ use app\core\Controller;
 class HomeController extends Controller{
     
    public function index(){
-       $this -> load("template");
+        $dados["view"] = "home";
+       $this -> load("template", $dados);
    } 
 
 }

@@ -4,11 +4,12 @@ use app\core\Controller;
 
 
 
-class ClienteController extends Controller{
+class ClientesController extends Controller{
     public function index(){
-        $dados = ["view"] = "lista_cliente";
+        $dados["view"] = "Clientes/lista_cliente";
         $this -> load("template", $dados);
     }
+
 }
 
 ?>

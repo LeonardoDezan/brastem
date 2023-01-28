@@ -1,13 +1,14 @@
-<div class="conteudo">
+<header class="topo">
+			<div class="conteudo">
 				<a href="" class="mobmenu fas fa-bars"></a>
-				<a href="index.html" class="logo"><img src="<?php echo URL_BASE ?>assets/img/logo.png"></a>
+				<a href="<?php echo URL_BASE . "Home"; ?>" class="logo"><img src="<?php echo URL_BASE ?>/assets/img/logo.png"></a>
 				<nav class="menu">
 					<ul>
-						<li><a href="<?php echo URL_BASE ?>index.html">Home</a></li>
+						<li><a href="<?php echo URL_BASE . "Home"; ?>">Home</a></li>
 						<li class="sub"><a href="">Cadastros</a>
 							<ul>
-								<li><a href="<?php echo URL_BASE . "cliente" ?>  ">Cliente</a></li>
-								<li><a href="lst-produto.html">Produto</a></li>
+								<li><a href="<?php echo URL_BASE . "Clientes"; ?>">Cliente</a></li>
+								<li><a href="<?php echo URL_BASE . "Produtos"; ?>">Produto</a></li>
 							</ul>
 						</li>
 						<li class="sub"><a href="">Estoques</a>

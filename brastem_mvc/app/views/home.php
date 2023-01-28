@@ -13,11 +13,11 @@
 						<a href="" class="col-3 mb-3 d-flex">
 							<article class="cx-home width-100">
 								<div class="cx-body">
-									<i><img src="<?php echo URL_BASE ?>assets/img/produtos-cadastrados.svg" alt="produtos cadastrados"></i>
+									<i><img src="<?php echo URL_BASE ?>/assets/img/produtos-cadastrados.svg" alt="produtos cadastrados"></i>
 										<span>Produtos cadastrados</span>
 									
 									<div class="d-flex text-end">
-										<img src="img/arrow-left.svg" alt="" class="icone-acesso">
+										<img src="<?php echo URL_BASE ?>/assets/img/arrow-left.svg" alt="" class="icone-acesso">
 									</div>
 								</div>
 							</article>
@@ -25,11 +25,11 @@
 						<a href="" class="col-3 mb-3 d-flex">
 							<article class="cx-home width-100">
 								<div class="cx-body">
-									<i><img src="<?php echo URL_BASE ?>assets/img/valor.svg" alt="valor atual do estoque"></i>
+									<i><img src="<?php echo URL_BASE ?>/assets/img/valor.svg" alt="valor atual do estoque"></i>
 										<span> Valor atual do estoque</span>
 									
 									<div class="d-flex text-end">
-										<img src="<?php echo URL_BASE ?>assets/img/arrow-left.svg" alt="" class="icone-acesso">
+										<img src="<?php echo URL_BASE ?>/assets/img/arrow-left.svg" alt="" class="icone-acesso">
 									</div>
 								</div>
 							</article>
@@ -37,11 +37,11 @@
 						<a href="" class="col-3 mb-3 d-flex">
 							<article class="cx-home width-100">
 								<div class="cx-body">
-									<i><img src="<?php echo URL_BASE ?>assets/img/preco-medio.svg" alt="preco-medio"></i>
+									<i><img src="<?php echo URL_BASE ?>/assets/img/preco-medio.svg" alt="preco-medio"></i>
 										<span>Preço médio</span>
 										<br>
 									<div class="d-flex text-end">
-										<img src="<?php echo URL_BASE ?>assets/img/arrow-left.svg" alt="" class="icone-acesso">
+										<img src="<?php echo URL_BASE ?>/assets/img/arrow-left.svg" alt="" class="icone-acesso">
 									</div>
 								</div>
 							</article>
@@ -49,11 +49,11 @@
 						<a href="" class="col-3 mb-3 d-flex">
 							<article class="cx-home width-100">
 								<div class="cx-body">
-									<i><img src="<?php echo URL_BASE ?>assets/img/versao-sistema.svg" alt="versão do sistema"></i>
+									<i><img src="<?php echo URL_BASE ?>/assets/img/versao-sistema.svg" alt="versão do sistema"></i>
 										<span>Versão do sistema</span>
 									
 									<div class="d-flex text-end">
-										<img src="<?php echo URL_BASE ?>assets/img/arrow-left.svg" alt="" class="icone-acesso">
+										<img src="<?php echo URL_BASE ?>/assets/img/arrow-left.svg" alt="" class="icone-acesso">
 									</div>
 								</div>
 							</article>
@@ -68,7 +68,7 @@
 						<a href="" class="col-4 mb-3 d-flex">
 							<article class="cx-home width-100 erros">
 								<div class="cx-body d-flex align-items-center text-between">
-									<i><img src="<?php echo URL_BASE ?>assets/img/warning.svg" alt="" class="icone-problemas"></i>
+									<i><img src="<?php echo URL_BASE ?>/assets/img/warning.svg" alt="" class="icone-problemas"></i>
 										<small>Itens com estoque baixo</small>
 										<strong>50</strong>
 								</div>
@@ -77,7 +77,7 @@
 						<a href="" class="col-4 mb-3 d-flex">
 							<article class="cx-home width-100 erros">
 								<div class="cx-body d-flex align-items-center text-between">
-									<i><img src="<?php echo URL_BASE ?>assets/img/warning.svg" alt="" class="icone-problemas"></i>
+									<i><img src="<?php echo URL_BASE ?>/assets/img/warning.svg" alt="" class="icone-problemas"></i>
 										<small>Produtos sem saída</small>
 										<strong>350</strong>
 								</div>
@@ -86,7 +86,7 @@
 						<a href="" class="col-4 mb-3 d-flex">
 							<article class="cx-home width-100 erros">
 								<div class="cx-body d-flex align-items-center text-between">
-									<i><img src="<?php echo URL_BASE ?>assets/img/warning.svg" alt="" class="icone-problemas"></i>
+									<i><img src="<?php echo URL_BASE ?>/assets/img/warning.svg" alt="" class="icone-problemas"></i>
 										<small>Ítens fora da validade</small>
 										<strong>2350</strong>
 								</div>

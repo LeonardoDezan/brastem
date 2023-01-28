@@ -4,7 +4,8 @@ use app\core\Controller;
 
 class ProdutosController extends Controller{
     public function index(){
-        echo "Cadastro de Produtos";
+        $dados["view"] = "Produtos/lista_produto";
+        $this->load("template", $dados);
     }
 }
 

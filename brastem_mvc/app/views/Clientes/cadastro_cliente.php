@@ -5,7 +5,7 @@
 							<div class="col-12 pt-2 d-flex text-between">
 								<h1 class="text-branco h2">	<i class="fas fa-box-open m-0 h2 text-amarelo"></i> Cadastrar cliente</h1>
 								<div>
-									<a href="index.php?link=2" class="btn btn-amarelo d-inline-block"><i class="fas fa-arrow-circle-left"></i> Voltar</a>								
+									<a href="<?php echo URL_BASE . "cliente/"; ?>" class="btn btn-amarelo d-inline-block"><i class="fas fa-arrow-circle-left"></i> Voltar</a>								
 								</div>
 							</div>
 								<div class="col-6 mb-3">
