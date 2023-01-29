@@ -1,6 +1,5 @@
 <!doctype html>
 <html language="pt-br">
-
 <head>
 	<title>mjailton</title>
 	<link rel="shortcut icon" href="<?php echo URL_BASE ?>
