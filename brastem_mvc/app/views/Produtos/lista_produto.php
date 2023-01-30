@@ -4,7 +4,7 @@
 						<div class="col-12 pt-2 d-flex text-between">
 							<h1 class="text-branco h2 mb-0"><i class="fas fa-list m-0 h2 text-amarelo"></i> Lista de produtos</h1>
 							<div>
-								<a href="index.php?link=5" class="btn btn-branco d-inline-block"><i class="fas fa-plus-circle"></i> Cadastrar novo</a>
+								<a href="<?php echo URL_BASE . "Produtos/create"; ?>" class="btn btn-branco d-inline-block"><i class="fas fa-plus-circle"></i> Cadastrar novo</a>
 								<a href="" class="btn btn-vermelho d-inline-block filtro ml-1"><i class="fas fa-filter"></i> Filtrar</a>
 							</div>
 						</div>
@@ -46,8 +46,9 @@
 							<th>Código do Produto</th>              
                             <th>Produto</th>
                             <th>Qualidade</th>
-                            <th>Estoque Atual</th>
-                            <th>Ações</th>
+                            <th>Cont.</th>
+                            <th>Estoque</th>
+							<th>Preço Mínimo</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -55,9 +56,11 @@
                             <tr>
                                 <td align="center"><?php echo $produto->id_produto; ?></td>
                                 <td align="center"><?php echo $produto->codigo; ?></td>
-                                <td align="center"><?php echo $produto->nome; ?></td>
+                                <td align="center"><?php echo $produto->produto; ?></td>
                                 <td align="center"><?php echo $produto->qualidade; ?></td>
+								<td align="center"><?php echo $produto->cont; ?></td>
 								<td align="center"><?php echo $produto->estoque; ?></td>
+								<td align="center"><?php echo  "R$ ". $produto->preco; ?></td>
                                 <td align="center">
 										<a href="#" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
                                     <a href="#" class="

@@ -13,6 +13,14 @@ class ClientesController extends Controller{
         $this -> load("template", $dados);
     }
 
+    public function create(){
+        $dados["view"] = "Clientes/cadastro_cliente";
+        $this->load("template", $dados);
+    }
+
+    public function salvar(){
+        print_r($_POST);
+    }
 }
 
 ?>

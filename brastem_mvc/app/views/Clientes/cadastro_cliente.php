@@ -1,11 +1,11 @@
 <div class="base-form">
 				<div class="radius-8 bg-padrao pt-2 px-4 pb-4">
-				<form>
+				<form action="<?php echo URL_BASE . "Clientes/salvar"; ?>" method="post">
 					<div class="rows">
 							<div class="col-12 pt-2 d-flex text-between">
 								<h1 class="text-branco h2">	<i class="fas fa-box-open m-0 h2 text-amarelo"></i> Cadastrar cliente</h1>
 								<div>
-									<a href="<?php echo URL_BASE . "cliente/"; ?>" class="btn btn-amarelo d-inline-block"><i class="fas fa-arrow-circle-left"></i> Voltar</a>								
+									<a href="<?php echo URL_BASE . "Clientes/"; ?>" class="btn btn-amarelo d-inline-block"><i class="fas fa-arrow-circle-left"></i> Voltar</a>								
 								</div>
 							</div>
 								<div class="col-6 mb-3">

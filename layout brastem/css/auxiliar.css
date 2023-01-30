@@ -282,7 +282,7 @@ a:hover{text-decoration:none!important}
 
 /*progress*/
 progress{
-	-webkit-appearance: none;
+	/* -webkit-appearance: none; */
     height: 16px;
 }
 progress::-webkit-progress-value { background:#0C99F1; }
@@ -707,9 +707,9 @@ small.msg.h6{
 	    height: 207px;
     overflow: hidden;
 }
-.msg-window.window .msg{
+/* .msg-window.window .msg{
 	
-}
+} */
 .msg-window.window .msg.msg-vermelho {
     background: #f9bfbf;
     border-color: #b96d6d;

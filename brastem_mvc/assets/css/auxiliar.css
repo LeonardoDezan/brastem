@@ -329,6 +329,7 @@ progress.progress-amarelo::-webkit-progress-bar{background:#ffff007d;}
 	border:0;
 }
 
+
 .tabela-responsiva td, .tabela-responsiva th {   
     font-size:.85rem
 }
@@ -453,12 +454,18 @@ input[type=number].form-campo{padding:10px}
     max-width: 100%;
     padding: 10px;
     display: block;   
-    color: #75807b;
-    background: #fff;
+    color: #3f3f3f;
+    background: rgba(255, 255, 255, 0.87);
     border-radius: 4px;
     transition: all .2s;
-	border:0
+	border:0;
+	
 }
+
+input::placeholder{
+	color: #272626;
+}
+
 
 input[type=date].form-campo{padding:7px}
 .form-campo::-webkit-input-placeholder{color:#ccc}
