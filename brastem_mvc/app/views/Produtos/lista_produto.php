@@ -62,7 +62,7 @@
 								<td align="center"><?php echo $produto->estoque; ?></td>
 								<td align="center"><?php echo  "R$ ". $produto->preco; ?></td>
                                 <td align="center">
-										<a href="#" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
+										<a href="<?php echo URL_BASE . "Produtos/edit/" . $produto->id_produto; ?>" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
                                     <a href="#" class="
 									btn btn-vermelho btn-auto" title="Excluir Usuário"><i class="ico-excluir"></i> Deletar</a>
 								</td>                                

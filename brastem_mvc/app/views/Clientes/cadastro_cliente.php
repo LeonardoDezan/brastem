@@ -21,21 +21,21 @@
 
 								<div class="col-6 mb-3">
 									 <span class="text-label">Nome cliente</span>
-									<input type="text" name="cliente" id="cliente" value="" class="form-campo">
+									<input type="text" name="nome_cliente" id="nome_cliente" class="form-campo">
 									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>nome</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
 								</div>
 
 								<div class="col-3 mb-3">
 									 <span class="text-label">CNPJ/CPF</span>
-									<input type="text" name="email" id="email" value="" class="form-campo">
+									<input type="text" name="cnpj_cpf" id="cnpj_cpf" value="" class="form-campo">
 									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>email</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
 								</div>
 								
 								<div class="col-3 mb-3">
 									 <span class="text-label">IE/RG</span>
-									<input type="text" name="ie_rg" id="ie_rg" value="" class="form-campo">
+									<input type="text" name="ie_rg" id="ie_rg" value="" class="form-campo" maxlength="9">
 									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>email</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
 								</div>
@@ -62,7 +62,7 @@
 
 								<div class="col-4 mb-3">
 									 <span class="text-label">BAIRRO</span>
-									<input type="text" name="bairo" id="bairro" value="" class="form-campo">
+									<input type="text" name="bairro" id="bairro" value="" class="form-campo">
 									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>email</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
 								</div>
@@ -107,14 +107,14 @@
 
 								<div class="col-4 mb-3">
 									 <span class="text-label">TELEFONE</span>
-									<input type="text" name="telefone" id="telefone" value="" class="form-campo">
+									<input type="text" name="telefone" id="telefone" value="" class="form-campo" maxlength="10">
 									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>email</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
 								</div>
 
 								<div class="col-4 mb-3">
 									 <span class="text-label">CONTATO</span>
-									<input type="email" name="contato_fone" id="contato_fone" value="" class="form-campo">
+									<input type="text" name="contato_fone" id="contato_fone" value="" class="form-campo">
 									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>email</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
 								</div>
@@ -126,7 +126,7 @@
 
 								<div class="col-4 mb-3">
 									 <span class="text-label">CELULAR</span>
-									<input type="text" name="celular" id="telefone" value="" class="form-campo">
+									<input type="text" name="celular" id="celular" value="" class="form-campo">
 									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>email</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
 								</div>

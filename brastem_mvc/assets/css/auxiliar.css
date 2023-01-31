@@ -343,6 +343,8 @@ progress.progress-amarelo::-webkit-progress-bar{background:#ffff007d;}
 }
 .tabela-responsiva td {   
 	 padding: .6rem;color: #404040;
+	 font-size: 16px;
+	 font-weight: 500;
 }
 .tabela-responsiva td .btn{   
 	 display: inline-block!important;
@@ -449,17 +451,19 @@ input[type=file].form-campo{padding:8px 10px}
 input[type=date].form-campo, 
 input[type=time].form-campo, 
 input[type=number].form-campo{padding:10px}
+
 .form-campo{
 	width: 100%;
     max-width: 100%;
     padding: 10px;
     display: block;   
-    color: #3f3f3f;
+    color: #464545;
     background: rgba(255, 255, 255, 0.87);
     border-radius: 4px;
     transition: all .2s;
 	border:0;
-	
+	font-size: 14px;
+	font-weight: 500;
 }
 
 input::placeholder{

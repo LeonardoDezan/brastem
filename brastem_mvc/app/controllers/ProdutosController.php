@@ -28,7 +28,16 @@ class ProdutosController extends Controller{
         $produtos->preco = $_POST['preco'];
 
         $objProdutos->inserir($produtos);
+
         header("location:" . URL_BASE . "Produtos");
+
+    }
+
+    public function edit($id){
+        $objProdutos = new Produtos();
+        $dados["produtos"] = $objProdutos->getProduto($id);
+        $dados["view"] = "Produtos/cadastro_produto";
+        $this->load("template", $dados);
     }
 
 }

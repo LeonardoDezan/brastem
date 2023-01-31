@@ -11,6 +11,13 @@ class Produtos extends Model{
         return $qry->fetchAll(\PDO::FETCH_OBJ);
     }
 
+    public function getProduto($id){
+        $sql = "SELECT * FROM tb_produto where id_produto = $id";
+        $qry = $this->db->query($sql);
+        return $qry->fetch(\PDO::FETCH_OBJ);
+    }
+
+
     public function inserir($produtos){
         $sql = " INSERT INTO tb_produto SET
                 codigo      =:codigo,
