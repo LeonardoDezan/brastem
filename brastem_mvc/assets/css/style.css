@@ -67,7 +67,7 @@ body.base-login .conteudo {
 	width:100%;
 	padding:10px 0;
 	height:65px;
-	background:#6238c9;
+	background:#7e06c3d5;
 	margin-bottom:20px;
 }
 
@@ -97,7 +97,9 @@ body.base-login .conteudo {
 	font-size:1em;
 	letter-spacing:1px;
 	transition:all .4s linear;
-	font-weight:300
+	font-weight:300;
+
+	
 }
 .topo .menu ul li a:hover{
 	opacity:.6;
@@ -505,7 +507,7 @@ table.dataTable thead .sorting_asc {background-color: #7a57d173!important;}
 /*1240*/
 @media (max-width:1240px){
 	.conteudo{max-width:100%;padding:0 2%}
-	.topo .menu ul>.sub ul { min-width: auto;}
+	.topo .menu ul>.sub ul { min-width: 150px;}
 }
 
 /*991*/

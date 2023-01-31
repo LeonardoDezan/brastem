@@ -29,10 +29,11 @@
 								<div class="col-3 mb-3">
 									 <span class="text-label">Qualidade</span>
 									 <select name="qualidade" class="form-campo" required>
-										<option value="<?php echo isset($produtos) ? $produtos->qualidade : "PREMIUM"; ?>"></option>
-										<option value="<?php echo isset($produtos) ? $produtos->qualidade : "PREMIUM ELASTOMÉRICA"; ?>"></option>
-										<option value="<?php echo isset($produtos) ? $produtos->qualidade : "STANDARD"; ?>"></option>
-										<option value="<?php echo isset($produtos) ? $produtos->qualidade : "ECONÔMICA"; ?>"></option>
+									 	<option value="<?php echo isset($produtos) ? $produtos->qualidade : "ECONÔMICA"; ?>"><?php echo isset($produtos) ? $produtos->qualidade : null; ?></option>
+										<option value="PREMIUM">PREMIUM</option>
+										<option value="PREMIUM ELASTOMÉRICA">PREMIUM ELASTOMÉRICA</option>
+										<option value="STANDARD">STANDARD</option>
+										<option value="ECONÔMICA">ECONÔMICA</option>
 									 </select>
 								</div>
 
