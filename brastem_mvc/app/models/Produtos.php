@@ -62,6 +62,10 @@ class Produtos extends Model{
 
     }
 
+    public function excluir($id){
+        $sql = "DELETE FROM tb_produto WHERE id_produto = $id";
+        $qry = $this->db->query($sql);
+    }
 
 }
 

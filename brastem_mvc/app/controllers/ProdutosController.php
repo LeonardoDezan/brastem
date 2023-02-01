@@ -33,9 +33,6 @@ class ProdutosController extends Controller{
         }else{
             $objProdutos->editar($produtos);
         }
-
-        
-
         header("location:" . URL_BASE . "Produtos");
 
     }
@@ -45,6 +42,14 @@ class ProdutosController extends Controller{
         $dados["produtos"] = $objProdutos->getProduto($id);
         $dados["view"] = "Produtos/cadastro_produto";
         $this->load("template", $dados);
+    }
+
+    public function excluir($id){
+        $objProdutos = new Produtos;
+        $objProdutos->excluir($id);
+        header("location:" . URL_BASE . "Produtos");
+
+        
     }
 
 }

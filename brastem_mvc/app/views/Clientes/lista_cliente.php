@@ -38,7 +38,7 @@
 					</div>
 				</div>
 				<br>
-				<span href="" class="msg msg-vermelho h5"><i class="fas fa-exclamation-triangle"></i> Cliente não encontrado. <a href="frm-cadastro.html" class="text-branco">Cadastre aqui</a> ou realize uma nova pesquisa <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></span>
+				<!-- <span href="" class="msg msg-vermelho h5"><i class="fas fa-exclamation-triangle"></i> Cliente não encontrado. <a href="frm-cadastro.html" class="text-branco">Cadastre aqui</a> ou realize uma nova pesquisa <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></span> -->
 				
 				<div class="tabela-responsiva tabela">
 					<table width="100%" border="0" cellspacing="0" cellpadding="0" id="dataTable">
@@ -58,7 +58,7 @@
                                 <td align="center"><a href="" class="text-azul"><i class="fas fa-envelope"></i><?php echo $clientes->email; ?></a></td>
                                 <td align="center">
 									<a href="<?php echo URL_BASE . "Clientes/edit/" . $clientes->id_clientes; ?>" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
-                                    <a href="#" class="btn btn-vermelho btn-auto" title="Excluir Usuário"><i class="ico-excluir"></i> Deletar</a>
+                                    <a href="<?php echo URL_BASE . "Clientes/excluir/" . $clientes->id_clientes; ?>" class="btn btn-vermelho btn-auto" title="Excluir Usuário"><i class="ico-excluir"></i> Deletar</a>
 								</td>                                
                             </tr>     
 							<?php } ?>

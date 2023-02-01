@@ -23,7 +23,7 @@ class ClientesController extends Controller{
 
         $cliente = new \stdClass;
         $cliente->tipo              =$_POST['tipo'];
-        $cliente->nome_cliente      =strtoupper($_POST['cliente']); 
+        $cliente->nome_cliente      =strtoupper($_POST['nome_cliente']); 
         $cliente->cnpj_cpf          =$_POST['cnpj_cpf'];
         $cliente->ie_rg             =$_POST['ie_rg'];
         $cliente->regime_tributario =$_POST['regime_tributario'];
@@ -37,12 +37,15 @@ class ClientesController extends Controller{
         $cliente->contato_fone      =strtoupper($_POST['contato_fone']); 
         $cliente->celular           =$_POST['celular'];
         $cliente->contato_cel       =strtoupper($_POST['contato_cel']); 
-        $cliente->obs               =strtoupper($_POST['obs']); 
-        // $cliente->fotos
-        // $cliente->data_criacao
-        // $cliente->data_edicao
+        $cliente->obs               =strtoupper($_POST['obs']);
+        $cliente->id_clientes       =($_POST["id_clientes"]) ? $_POST["id_clientes"] : null;
+        if (!$cliente->id_clientes){
+            $objClientes->inserir($cliente);
+        }else{
+            $objClientes->editar($cliente);
+        }
 
-        $objClientes->inserir($cliente);
+
         header("location:" . URL_BASE . "Clientes");
     }
 
@@ -52,6 +55,12 @@ class ClientesController extends Controller{
         $dados["view"] = "Clientes/cadastro_cliente";
         $this->load("template", $dados);
 
+    }
+
+    public function excluir($id){
+        $objClientes = new Clientes;
+        $objClientes->excluir($id);
+        header("location:" . URL_BASE . "Clientes"); 
     }
 
 }

@@ -1,8 +1,8 @@
 <!doctype html>
 <html language="pt-br">
 <head>
-	<title>mjailton</title>
-	<link rel="shortcut icon" href="<?php echo URL_BASE ?>assets/img/favicon.png" type="image/x-icon" />
+	<title>Brastem Tintas</title>
+	<link rel="shortcut icon" href="<?php echo URL_BASE ?>assets/img/" type="image/x-icon" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo URL_BASE ?>assets/css/auxiliar.css">
 	<link rel="stylesheet" href="<?php echo URL_BASE ?>assets/css/grade.css">
 	<link rel="stylesheet" href="<?php echo URL_BASE ?>assets/css/style.css">
+	
 	<!--font icones-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 

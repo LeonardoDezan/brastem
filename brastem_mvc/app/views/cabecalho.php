@@ -1,7 +1,7 @@
 <header class="topo">
 			<div class="conteudo">
 				<a href="" class="mobmenu fas fa-bars"></a>
-				<a href="<?php echo URL_BASE . "Home"; ?>" class="logo"><img src="<?php echo URL_BASE ?>assets/img/logo.png"></a>
+				<a href="<?php echo URL_BASE . "Home"; ?>" class="logo" style="font-size: 35px; color: azure;">brastem</a>
 				<nav class="menu">
 					<ul>
 						<li><a href="<?php echo URL_BASE . "Home"; ?>">Home</a></li>
