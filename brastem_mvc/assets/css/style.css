@@ -78,8 +78,8 @@ body.base-login .conteudo {
 .topo .logo img{
 	width:100%
 }
-/*centraliza o conteudo do topo
-.topo .conteudo{width:100%;padding:0 8%}*/
+/* centraliza o conteudo do topo */
+.topo .conteudo{width:100%;padding:0 8%}
 
 .topo .menu{
 	float:right;
