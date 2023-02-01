@@ -6,9 +6,15 @@ use app\core\Model;
 class Clientes extends Model{
     public function lista(){
         // Listagem de CLientes
-        $sql = "SELECT * FROM `tb_clientes`";
+        $sql = "SELECT * FROM tb_clientes";
         $qry = $this->db->query($sql);
         return $qry->fetchAll(\PDO::FETCH_OBJ);
+    }
+
+    public function getCliente($id){
+        $sql = "SELECT * FROM tb_clientes WHERE id_clientes=$id";
+        $qry = $this->db->query($sql);
+        return $qry->fetch(\PDO::FETCH_OBJ);
     }
 
     public function inserir($cliente){

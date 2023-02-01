@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 	<script src="<?php echo URL_BASE ?>assets/js/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+
 </head>
 	<body>
 
@@ -40,7 +40,7 @@
 			$('#cep').mask('00000-000');
 			$('#telefone').mask('(00) 0000-0000');
 			$('#celular').mask('(00) 0 0000-0000');
-			$('#cnpj_cpf').mask('00.000.000/0000-00', {reverse: true});
+			$('#cnpj').mask('00.000.000/0000-00', {reverse: true});
 		</script>
 		<script src="<?php echo URL_BASE ?>assets/js/alertas-js.js"></script>
 		

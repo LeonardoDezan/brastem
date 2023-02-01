@@ -26,8 +26,15 @@ class ProdutosController extends Controller{
         $produtos->estoque = $_POST['estoque'];
         $produtos->cont = $_POST['cont'];
         $produtos->preco = $_POST['preco'];
+        $produtos->id_produto = ($_POST["id_produto"]) ? $_POST["id_produto"] : NULL;
+        
+        if(!$produtos->id_produto){
+            $objProdutos->inserir($produtos);
+        }else{
+            $objProdutos->editar($produtos);
+        }
 
-        $objProdutos->inserir($produtos);
+        
 
         header("location:" . URL_BASE . "Produtos");
 

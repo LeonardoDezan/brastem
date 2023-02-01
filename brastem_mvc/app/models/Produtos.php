@@ -36,9 +36,33 @@ class Produtos extends Model{
         $qry->bindValue(":preco", $produtos->preco);
         $qry->execute();
         return $this->db->lastInsertId();
-
-        
+       
     }
+
+    public function editar($produtos){
+        $sql = "UPDATE tb_produto SET
+                codigo      =:codigo,
+                produto     =:produto,
+                qualidade   =:qualidade,
+                estoque     =:estoque,
+                cont        =:cont,
+                preco       =:preco
+                WHERE id_produto =:id_produto";
+
+        $qry = $this->db->prepare($sql);
+        $qry->bindValue(":produto", $produtos->produto);
+        $qry->bindValue(":codigo", $produtos->codigo);
+        $qry->bindValue(":qualidade", $produtos->qualidade);
+        $qry->bindValue(":estoque", $produtos->estoque);
+        $qry->bindValue(":cont", $produtos->cont);
+        $qry->bindValue(":preco", $produtos->preco);
+        $qry->bindValue(":id_produto", $produtos->id_produto);
+        $qry->execute();
+        return $produtos->id_produto;     
+
+    }
+
+
 }
 
 

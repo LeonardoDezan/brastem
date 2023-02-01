@@ -57,7 +57,7 @@
                                 <td align="center"><?php echo $clientes->nome_cliente; ?></td>
                                 <td align="center"><a href="" class="text-azul"><i class="fas fa-envelope"></i><?php echo $clientes->email; ?></a></td>
                                 <td align="center">
-									<a href="#" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
+									<a href="<?php echo URL_BASE . "Clientes/edit/" . $clientes->id_clientes; ?>" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Eiditar</a>
                                     <a href="#" class="btn btn-vermelho btn-auto" title="Excluir Usuário"><i class="ico-excluir"></i> Deletar</a>
 								</td>                                
                             </tr>     

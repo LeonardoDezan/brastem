@@ -45,6 +45,15 @@ class ClientesController extends Controller{
         $objClientes->inserir($cliente);
         header("location:" . URL_BASE . "Clientes");
     }
+
+    public function edit($id){
+        $objClientes = new Clientes;
+        $dados["cliente"] = $objClientes->getCliente($id);
+        $dados["view"] = "Clientes/cadastro_cliente";
+        $this->load("template", $dados);
+
+    }
+
 }
 
 ?>

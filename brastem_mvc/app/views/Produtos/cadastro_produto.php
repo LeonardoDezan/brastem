@@ -12,6 +12,14 @@
 								
 								</div>
 							</div>
+
+								<div class="col-1 mb-3">
+									 <span class="text-label">ID</span>
+									<input type="text" name="id_produto" value="<?php echo isset($produtos) ? $produtos->id_produto : null; ?>" class="form-campo" placeholder="Digite o nome do Produto" required>
+									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>Produto</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
+				
+								</div>
+
 								<div class="col-8 mb-3">
 									 <span class="text-label">Produto</span>
 									<input type="text" name="produto" value="<?php echo isset($produtos) ? $produtos->produto : ""; ?>" class="form-campo" placeholder="Digite o nome do Produto" required>
@@ -22,14 +30,14 @@
 								<div class="col-3 mb-3">
 									 <span class="text-label">Código</span>
 									<input type="text" name="codigo" value="<?php echo isset($produtos) ? $produtos->codigo : ""; ?>" class="form-campo" placeholder="Digite o Código do Produto" required>
-									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>preço</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
+									<small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>preço</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small>
 				
 								</div>	
 								
 								<div class="col-3 mb-3">
 									 <span class="text-label">Qualidade</span>
 									 <select name="qualidade" class="form-campo" required>
-									 	<option value="<?php echo isset($produtos) ? $produtos->qualidade : "ECONÔMICA"; ?>"><?php echo isset($produtos) ? $produtos->qualidade : null; ?></option>
+									 	<option value="<?php echo isset($produtos) ? $produtos->qualidade : null; ?>"><?php echo isset($produtos) ? $produtos->qualidade : null; ?></option>
 										<option value="PREMIUM">PREMIUM</option>
 										<option value="PREMIUM ELASTOMÉRICA">PREMIUM ELASTOMÉRICA</option>
 										<option value="STANDARD">STANDARD</option>
@@ -40,8 +48,9 @@
 								<div class="col-3 mb-3">
 									 <span class="text-label">Cont.</span>
 									 <select name="cont" class="form-campo" required>
-										<option value="<?php echo isset($produtos) ? $produtos->cont : "3.6"; ?>">3.6 Litros</option>
-										<option value="<?php echo isset($produtos) ? $produtos->cont : "18"; ?>">18 Litros</option>
+									 	<option value="<?php echo isset($produtos) ? $produtos->cont : null; ?>"><?php echo isset($produtos) ? $produtos->cont : null; ?> Litros</option>
+										<option value="3.6">3.6 Litros</option>
+										<option value="18">18 Litros</option>
 									 </select>
 									<!-- <input type="text" value="" class="form-campo"> -->
 									<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>estoque mínimo</b> é obrigatório <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->

@@ -1,4 +1,5 @@
-<div class="base-form">
+<div>
+	<div class="base-form">
 				<div class="radius-8 bg-padrao pt-2 px-4 pb-4">
 					<div class="rows">
 						<div class="col-12 pt-2 d-flex text-between">
@@ -49,6 +50,7 @@
                             <th>Cont.</th>
                             <th>Estoque</th>
 							<th>Preço Mínimo</th>
+							<th>Opções</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -74,3 +76,7 @@
 				</div>
 				
 			</div>
+		</div>					
+
+	</div>
+</div>
