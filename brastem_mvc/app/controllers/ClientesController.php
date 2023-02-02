@@ -2,11 +2,25 @@
 namespace app\controllers;
 use app\core\Controller;
 use app\models\Clientes;
+use app\models\Login;
 
 
 
 class ClientesController extends Controller{
+
+    public function __construct(){
+        // verificação de login
+        $objLogin = new Login();
+        $GLOBALS["idusuario"] = $objLogin->retornaIdUsuario();
+        if(!$GLOBALS["idusuario"]){
+            header("location:" . URL_BASE . "Login");
+        }
+    }
+
     public function index(){
+
+        
+
         $objClientes = new Clientes();
         $dados["lista"] = $objClientes->lista();
         $dados["view"] = "Clientes/lista_cliente";

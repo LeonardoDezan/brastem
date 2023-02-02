@@ -4,7 +4,7 @@
 					<div class="grade-home">
 					<div class="rows">
 						<div class="col-12">
-							<span class="h3 mb-0 text-roxo">Olá, Jailton.</span>
+							<span class="h3 mb-0 text-roxo">Olá, .</span>
 							<span class="h4 text-cinza">Seja bem-vindo ao seu controle de estoque!</span>
 						</div>
 						<div class="col-12 mt-4">

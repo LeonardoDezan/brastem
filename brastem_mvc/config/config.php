@@ -6,8 +6,9 @@ define("USUARIO", "root");
 define("SENHA", "");
 
 
-define('CONTROLLER_PADRAO', 'login');
+define('CONTROLLER_PADRAO', 'home');
 define('METODO_PADRAO', 'index');
 define('NAMESPACE_CONTROLLER', 'app\\controllers\\');
 
 define('URL_BASE', 'http://localhost/brastem/brastem_mvc/');
+define('SESSION_LOGIN', 'usuarioLogado');

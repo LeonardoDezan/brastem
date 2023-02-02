@@ -14,6 +14,12 @@ class Login extends Model{
         return $qry->fetch(\PDO::FETCH_ASSOC);
     }
 
+    public function retornaIdUsuario(){
+        $GLOBALS["idusuario"] = isset($_SESSION[SESSION_LOGIN]) ? $_SESSION[SESSION_LOGIN]["id_usuario"] : NULL;
+
+        return $GLOBALS["idusuario"];
+    }
+    
 }
 
 

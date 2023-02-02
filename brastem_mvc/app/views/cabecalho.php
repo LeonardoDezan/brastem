@@ -28,7 +28,7 @@
 								<li><a href="consulta-clientes.html">Cliente</a></li>
 							</ul>
 						</li>
-						<li><a href="">Sair</a></li>
+						<li><a href="<?php echo URL_BASE . "login/logoff" ?>">Sair</a></li>
 					</ul>
 				</nav>
 			</div>

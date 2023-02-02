@@ -17,16 +17,19 @@ class LoginController extends Controller{
         $senha = $_POST["senha"];
         $usuario = $objLogin->logar($cpf, $senha);
         if($usuario){
-            $_SESSION["usuarioLogado"] = $usuario;
+            $_SESSION[SESSION_LOGIN] = $usuario;
             header("location:" . URL_BASE);
         }else{
-            unset($_SESSION["usuarioLogado"]);
+            unset($_SESSION[SESSION_LOGIN]);
             echo "usuario não encontrado";
         } 
 
     }
 
-
+    public function logoff(){
+        unset($_SESSION[SESSION_LOGIN]);
+        header("location:" . URL_BASE . "Login");
+    }
 
 }
 

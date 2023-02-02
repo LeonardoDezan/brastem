@@ -2,9 +2,23 @@
 namespace app\controllers;
 use app\core\Controller;
 use app\models\Produtos;
+use app\models\Login;
 
 class ProdutosController extends Controller{
+
+    public function __construct(){
+        // verificação de login
+        
+        $objLogin = new Login();
+        $GLOBALS["idusuario"] = $objLogin->retornaIdUsuario();
+        if(!$GLOBALS["idusuario"]){
+            header("location:" . URL_BASE . "Login");
+        }
+    }
+
+
     public function index(){
+            
         $objProdutos = new Produtos;
         $dados["lista"] = $objProdutos->lista();
         $dados["view"] = "Produtos/lista_produto";
