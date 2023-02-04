@@ -1,14 +1,13 @@
-<form action="<?php echo URL_BASE. "Produtos/salvar" ?>" method="post">
-<div class="base-form">
-				<!-- <span href="" class="msg msg-verde"><i class="fas fa-check"></i> Produto cadastrado com sucesso <a href="javascrip:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></span> -->
-				<!-- <span href="" class="msg msg-vermelho h5"><i class="fas fa-exclamation-triangle"></i> Produto não cadastrado, verifique os dados inseridos<a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></span> -->
-				
-				<div class="radius-8 bg-padrao pt-2 px-4 pb-4">
-					<div class="rows">
+<div>
+	<form action="<?php echo URL_BASE. "Produtos/salvar" ?>" method="post">
+		<div class="base-form">
+
+			<div class="radius-8 bg-padrao pt-2 px-4 pb-4">
+				<div class="rows">
 							<div class="col-12 pt-2 d-flex text-between">
 								<h1 class="text-branco"><i class="fas fa-box-open m-0 h2 text-amarelo"></i> Cadastro de Produtos</h1>
 								<div>
-								<a href="<?php echo URL_BASE. "Produtos" ?>" class="btn btn-amarelo d-inline-block"><i class="fas fa-arrow-circle-left"></i> Voltar</a>
+									<a href="<?php echo URL_BASE. "Produtos" ?>" class="btn btn-amarelo d-inline-block"><i class="fas fa-arrow-circle-left"></i> Voltar</a>
 								
 								</div>
 							</div>
@@ -78,9 +77,12 @@
 							</div>									
 								
 						</div>
-				</div>
-				
-			</div>
+			</div>				
+		</div>
+	</form>
+</div>
 
 
-</form>
+<!-- <span href="" class="msg msg-verde"><i class="fas fa-check"></i> Produto cadastrado com sucesso <a href="javascrip:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></span> -->
+<!-- <span href="" class="msg msg-vermelho h5"><i class="fas fa-exclamation-triangle"></i> Produto não cadastrado, verifique os dados inseridos<a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></span> -->
+		
