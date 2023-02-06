@@ -3,6 +3,7 @@ session_start();
 require 'config/config.php';
 require 'app/core/Core.php';
 require 'vendor/autoload.php';
+date_default_timezone_set(TIMEZONE);
 
 $core = new Core;
 $core->run();
