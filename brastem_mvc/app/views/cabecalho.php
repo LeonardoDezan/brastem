@@ -13,7 +13,7 @@
 						</li>
 						<li class="sub"><a href="">Estoques</a>
 							<ul>
-								<li><a href="entrada-produto.html">Entradas de produtos</a></li>
+								<li><a href="<?php echo URL_BASE . "Entradas"; ?>">Entradas de produtos</a></li>
 								<li><a href="saida-produto.html">Saída de produtos</a></li>
 							</ul>
 						</li>
