@@ -346,7 +346,7 @@ body.base-login .conteudo {
 .paginacao ul li{
 	display:inline-block;
 	margin:0;
-	float:left;
+	float: left;
 	border:solid 1px #ddd;
 }
 .paginacao ul li a{

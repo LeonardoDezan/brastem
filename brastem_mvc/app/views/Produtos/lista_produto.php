@@ -3,7 +3,7 @@
 				<div class="radius-8 bg-padrao pt-2 px-4 pb-4">
 					<div class="rows">
 						<div class="col-12 pt-2 d-flex text-between">
-							<h1 class="text-branco h2 mb-0"><i class="fas fa-list m-0 h2 text-amarelo"></i> Lista de produtos</h1>
+							<h1 class="text-roxo h2 mb-0"><i class="fas fa-list m-0 h2 text-amarelo"></i> Lista de produtos</h1>
 							<div>
 								<a href="<?php echo URL_BASE . "Produtos/create"; ?>" class="btn btn-branco d-inline-block"><i class="fas fa-plus-circle"></i> Cadastrar novo</a>
 								<a href="" class="btn btn-vermelho d-inline-block filtro ml-1"><i class="fas fa-filter"></i> Filtrar</a>

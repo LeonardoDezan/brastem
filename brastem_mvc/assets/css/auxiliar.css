@@ -152,7 +152,7 @@ a:hover{text-decoration:none!important}
 .text-azul{color:#3aa6ea!important;text-decoration:none}
 .text-vermelho{color:#FF7373!important;text-decoration:none}
 .text-verde{color:#15c756!important;text-decoration:none}
-.text-roxo{color:#7a57d1!important;text-decoration:none}
+.text-roxo{color:#7e06c3d5!important;text-decoration:none}
 .text-branco{color:#ffffff!important;text-decoration:none}
 .text-amarelo{color:#fac807!important;text-decoration:none}
 .text-laranja{color:#ff8100!important;text-decoration:none}
@@ -452,17 +452,19 @@ input[type=time].form-campo,
 input[type=number].form-campo{padding:10px}
 
 .form-campo{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	width: 100%;
     max-width: 100%;
     padding: 10px;
     display: block;   
-    color: #464545;
+    color: #575454;
     background: rgba(255, 255, 255, 0.87);
     border-radius: 4px;
     transition: all .2s;
 	border:0;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 500;
+	
 }
 
 input::placeholder{

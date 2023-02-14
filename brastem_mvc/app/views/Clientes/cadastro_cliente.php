@@ -3,7 +3,7 @@
 				<form action="<?php echo URL_BASE . "Clientes/salvar"; ?>" method="post">
 					<div class="rows">
 							<div class="col-12 pt-2 d-flex text-between">
-								<h1 class="text-branco h2">	<i class="fas fa-box-open m-0 h2 text-amarelo"></i> Cadastrar cliente</h1>
+								<h1 class="text-roxo h2">	<i class="fas fa-box-open m-0 h2 text-amarelo"></i> Cadastrar cliente</h1>
 								<div>
 									<a href="<?php echo URL_BASE . "Clientes/"; ?>" class="btn btn-amarelo d-inline-block"><i class="fas fa-arrow-circle-left"></i> Voltar</a>								
 								</div>
