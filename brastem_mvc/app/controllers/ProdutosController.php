@@ -66,6 +66,13 @@ class ProdutosController extends Controller{
         
     }
 
+    public function buscaPorId($id_produto){
+        $objProdutos = new Produtos();
+        $produto = $objProdutos->getProduto($id_produto); 
+        echo json_encode($produto);
+
+    }
+
 }
 
 
