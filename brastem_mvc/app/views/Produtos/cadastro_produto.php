@@ -62,7 +62,7 @@
 
 								<div class="col-3 mb-3">
 									 <span class="text-label">Preço Minimo</span>
-									<input type="text" value="<?php echo isset($produtos) ? $produtos->preco : "" ; ?>" name="preco" class="form-campo" placeholder="R$ 0,00" required>
+									<input type="text" value="<?php echo isset($produtos) ? $produtos->preco : "" ; ?>" name="preco" class="form-campo" placeholder="R$ 0,00" id="money" required>
 									<script>
 										
 									</script>
