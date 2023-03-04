@@ -6,7 +6,7 @@ use app\core\Model;
 class Entradas extends Model{
     public function lista(){
         // Listagem de produtos
-        $sql = "SELECT * FROM tb_entrada";
+        $sql = "SELECT * FROM tb_entrada e, tb_produto p where e.id_produto = p.id_produto";
         $qry = $this->db->query($sql);
         return $qry->fetchAll(\PDO::FETCH_OBJ);
     }
@@ -18,24 +18,22 @@ class Entradas extends Model{
     }
 
 
-    public function inserir($entradas){
-        $sql = " INSERT INTO tb_entrada SET
+    public function inserir($dados){
+        $sql = " INSERT INTO tb_entrada SET  
                 data_entrada       =:data_entrada,
                 valor_entrada      =:valor_entrada,
                 quantidade         =:quantidade,
-                id_produto         =:id_produto,
-                id_clientes        =:id_clientes,
+                subtotal_entrada   =:subtotal_entrada,
                 hora_entrada       =:hora_entrada,
-                subtotal_entrada   =:subtotal_entrada
+                id_produto         =:id_produto
                 ";
-        $qry = $this->db->prepare($sql);
+        $qry = $this->db->prepare($sql);      
         $qry->bindValue(":data_entrada", date("Y-m-d"));
-        $qry->bindValue(":valor_entrada", $entradas->valor_entrada);
-        $qry->bindValue(":quantidade", $entradas->quantidade);
-        $qry->bindValue(":id_produto", $entradas->id_produto);
-        $qry->bindValue(":id_clientes", $entradas->id_clientes);
+        $qry->bindValue(":valor_entrada", $dados["valor_entrada"]);
+        $qry->bindValue(":quantidade", $dados["quantidade"]);
+        $qry->bindValue(":id_produto", $dados["id_produto"]);
         $qry->bindValue(":hora_entrada", date("H:i:s"));
-        $qry->bindValue(":subtotal_entrada", $entradas->valor_entrada * $entradas->quantidade );
+        $qry->bindValue(":subtotal_entrada",  $dados["quantidade"] *  $dados["valor_entrada"] );
         $qry->execute();
         return $this->db->lastInsertId();
 

@@ -7,14 +7,14 @@
 						</div>	
 					</div>
 					<div >
-					<form action="<?php echo URL_BASE . "Entradas/salvar" ?>" method="POST">
+				<form action="<?php echo URL_BASE . "Entradas/salvar"; ?>" method="POST">
 					<div class="rows mt-0">
 						<div class="col-6 position-relative">
 							<label class="text-label">Produto</label>
 							<select class="form-campo" name="id_produto" id="id_produto" onchange="selecionarProduto()">
 								<option value="">Escolha um produto</option>
 								<?php foreach($produtos as $produto){
-									echo "<option value='$produto->id_produto'>$produto->produto -  $produto->codigo - $produto->qualidade</option>";
+									echo "<option value='$produto->id_produto'>$produto->produto</option>";
 								}?>
 								
 								
@@ -26,7 +26,7 @@
 				
 						</div>
 						<div class="col-3 position-relative">
-							<label class="text-label">Preço minino</label>
+							<label class="text-label">Preço Entrada</label>
 							<input type="text" id="preco_minimo" name="valor_entrada" class="form-campo">
 							<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>quantidade</b> tem quer ser maior que <b>0</b> <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
@@ -40,10 +40,10 @@
 						</div>			
 
 						<div class="col-2 mt-4">
-							<input type="submit" name="" value="Pesquisar" class="btn btn-amarelo width-100">
+							<input type="submit" name="" value="Inserir" class="btn btn-amarelo width-100">
 						</div>
 					</div>
-					</form>
+				</form>
 					</div>
 				</div>
 				<br>
@@ -62,13 +62,13 @@
                           </tr>
                         </thead>
                         <tbody>
-							<?php foreach($lista as $entradas){ ?>
+							<?php foreach($entradas as $entradas){ ?>
                             	<tr>
-									<td align="center"><?php echo $entradas->id_entrada ?></td>
-									<td align="center"><?php echo $entradas->produto ?></td>
-									<td align="center"><?php echo $entradas->quantidade ?></td>
-									<td align="center"><?php echo $entradas->valor_entrada ?></td>
-									<td align="center"><?php echo $entradas->subtotal_entrada ?></td>
+									<td align="center"><?php echo $entradas->id_entrada; ?></td>
+									<td align="center"><?php echo $entradas->produto; ?></td>
+									<td align="center"><?php echo $entradas->quantidade; ?></td>
+									<td align="center"><?php echo $entradas->valor_entrada; ?></td>
+									<td align="center"><?php echo $entradas->subtotal_entrada; ?></td>
 									<td align="center">
 									<a href="#" class="btn btn-verde" title="Editar Usuário"><i class="ico-editar"></i></a>
 									<a href="#" class="btn btn-vermelho" title="Excluir Usuário"><i class="ico-excluir"></i></a>
@@ -97,7 +97,7 @@
 			dataType: "Json",
 			data:{},
 			success: function(retorno){
-				$("#preco_minimo").val(retorno.estoque);
+				$("#preco_minimo").val(retorno.preco);
 				$("#preco").focus();
 			}
 		});

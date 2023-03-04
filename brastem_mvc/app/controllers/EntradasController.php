@@ -10,7 +10,7 @@ class EntradasController extends Controller{
         $objProdutos = new Produtos();
         $dados["produtos"] = $objProdutos->lista();
         $objEntradas = new Entradas();
-        $dados["lista"] = $objEntradas->lista();
+        $dados["entradas"] = $objEntradas->lista();
 
         $dados["view"] = "Estoque/Entradas";
         $this->load("template", $dados);
