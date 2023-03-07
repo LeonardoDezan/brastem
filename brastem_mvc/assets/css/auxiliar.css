@@ -369,7 +369,8 @@ progress.progress-amarelo::-webkit-progress-bar{background:#ffff007d;}
     padding: 6px;
 }
 .tabela-responsiva td .btn.btn-auto .ico-editar,
-.tabela-responsiva td .btn.btn-auto .ico-excluir
+.tabela-responsiva td .btn.btn-auto .ico-excluir,
+.tabela-responsiva td .btn.btn-auto .ico-add
 {   
     display:inline-block!important
 }
@@ -380,6 +381,15 @@ progress.progress-amarelo::-webkit-progress-bar{background:#ffff007d;}
     height: 17px;
     background-size: cover;
 }
+
+.tabela-responsiva td .ico-add{   
+	background: url(../img/iconadd.png)no-repeat center;
+display: block;
+width: 17px;
+height: 17px;
+background-size: cover;
+}
+
 .tabela-responsiva td .ico-excluir{   
 	    background: url(../img/iconoir_trash.svg)no-repeat center;
     display: block;
