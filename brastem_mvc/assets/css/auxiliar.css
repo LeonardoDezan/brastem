@@ -318,6 +318,7 @@ progress.progress-amarelo::-webkit-progress-bar{background:#ffff007d;}
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+	padding: 10px;
 	
 	
 }
@@ -327,6 +328,13 @@ progress.progress-amarelo::-webkit-progress-bar{background:#ffff007d;}
     margin-bottom: 1rem;
     background-color: transparent;
 	border:0;
+}
+
+.dataTables_length{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 5px;
 }
 
 .tabela-responsiva td, .tabela-responsiva th {   
@@ -381,7 +389,7 @@ progress.progress-amarelo::-webkit-progress-bar{background:#ffff007d;}
 }
 
 .tabela-responsiva tr:nth-of-type(2n+0){ background:#fff}
-/*.tabela-responsiva tr{ background:#dddddd4f}*/
+.tabela-responsiva tr{ background:#dddddd4f}
 .rolagem-tabela{
 	height:380px;
 	overflow-y:scroll

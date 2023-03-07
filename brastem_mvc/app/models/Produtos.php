@@ -67,6 +67,11 @@ class Produtos extends Model{
         $qry = $this->db->query($sql);
     }
 
+    public function AtualizarEstoque($id_produto, $quantidade){
+        $sql = "UPDATE tb_produto SET estoque = estoque + ($quantidade) WHERE id_produto = $id_produto";
+        $qry = $this->db->query($sql);
+    }
+
 }
 
 

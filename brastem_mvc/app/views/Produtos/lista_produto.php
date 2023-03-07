@@ -6,7 +6,7 @@
 							<h1 class="text-roxo h2 mb-0"><i class="fas fa-list m-0 h2 text-amarelo"></i> Lista de produtos</h1>
 							<div>
 								<a href="<?php echo URL_BASE . "Produtos/create"; ?>" class="btn btn-branco d-inline-block"><i class="fas fa-plus-circle"></i> Cadastrar novo</a>
-								<a href="" class="btn btn-vermelho d-inline-block filtro ml-1"><i class="fas fa-filter"></i> Filtrar</a>
+								<!-- <a href="" class="btn btn-vermelho d-inline-block filtro ml-1"><i class="fas fa-filter"></i> Filtrar</a> -->
 							</div>
 						</div>
 					</div>

@@ -5,7 +5,7 @@
 							<h1 class="text-roxo h2 mb-0"><i class="fas fa-list m-0 h2 text-amarelo"></i> Lista de clientes</h1>
 							<div>
 								<a href="<?php echo URL_BASE . "Clientes/create"; ?>" class="btn btn-branco d-inline-block"><i class="fas fa-plus-circle"></i> Cadastrar novo</a>
-								<a href="" class="btn btn-vermelho d-inline-block filtro ml-1"><i class="fas fa-filter"></i> Filtrar</a>
+								<!-- <a href="" class="btn btn-vermelho d-inline-block filtro ml-1"><i class="fas fa-filter"></i> Filtrar</a> -->
 							</div>
 						</div>
 					</div>
@@ -41,7 +41,7 @@
 				<!-- <span href="" class="msg msg-vermelho h5"><i class="fas fa-exclamation-triangle"></i> Cliente não encontrado. <a href="frm-cadastro.html" class="text-branco">Cadastre aqui</a> ou realize uma nova pesquisa <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></span> -->
 				
 				<div class="tabela-responsiva tabela">
-					<table width="100%" border="0" cellspacing="0" cellpadding="0" id="dataTable">
+					<table width="100%" border="0" cellspacing="" cellpadding="0" id="dataTable">
                         <thead>
                           <tr>
                             <th>#</th>                

@@ -17,9 +17,13 @@ class EntradasController extends Controller{
     }
 
     public function salvar(){
+        $objProdutos = new Produtos();
         $objEntradas = new Entradas();
         $entradas = $_POST;
-        $objEntradas->inserir($entradas);
+        $id = $objEntradas->inserir($entradas);
+        if($id){
+            $objProdutos->AtualizarEstoque($_POST["id_produto"], $_POST["quantidade"]);
+        }
 
         header("location:" . URL_BASE . "Entradas");
 
