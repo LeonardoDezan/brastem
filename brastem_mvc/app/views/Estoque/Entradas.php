@@ -27,7 +27,7 @@
 						</div>
 						<div class="col-3 position-relative">
 							<label class="text-label">Preço Entrada</label>
-							<input type="text" id="preco_minimo" name="valor_entrada" class="form-campo">
+							<input type="text" id="money" name="valor_entrada" class="form-campo">
 							<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>quantidade</b> tem quer ser maior que <b>0</b> <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
 						</div>
@@ -97,7 +97,7 @@
 			dataType: "Json",
 			data:{},
 			success: function(retorno){
-				$("#preco_minimo").val(retorno.preco);
+				$("#money").val(retorno.preco);
 				$("#preco").focus();
 			}
 		});
