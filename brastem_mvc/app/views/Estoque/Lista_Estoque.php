@@ -48,19 +48,20 @@
                           </tr>
                         </thead>
                         <tbody>
+							<?php foreach($lista as $estoque){ ?> 
                             <tr>
-                                <td align="center">1</td>
-                                <td align="center"> 10/06/2020</td>
-                                <td align="center">Produto</td>
-                                <td align="center">1</td>
-                                <td align="center">R$ 1.280,00</td>
-                                <td align="center">R$ 1.280,00</td>
+                                <td align="center"><?php echo $estoque->codigo  ?></td>
+                                <td align="center"><?php echo $estoque->produto  ?></td>
+                                <td align="center"><?php echo $estoque->qualidade  ?></td>
+                                <td align="center"><?php echo $estoque->cont  ?></td>
+                                <td align="center"><?php echo $estoque->estoque  ?></td>
+                                <td align="center"><?php echo $estoque->preco  ?></td>
 								<td align="center">
 									<a href="#" class="btn btn-verde btn-auto" title="Editar Usuário"><i class="ico-add"></i> Carrinho </a>
 									<a href="#" class="btn btn-azul btn-auto" title="Editar Usuário"><i class="ico-editar"></i> Adicionar </a>
 								</td>   
                             </tr>
-
+							<?php } ?>		
                                                         
                                                        
                         </tbody>

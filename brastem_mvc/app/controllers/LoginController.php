@@ -20,8 +20,10 @@ class LoginController extends Controller{
             $_SESSION[SESSION_LOGIN] = $usuario;
             header("location:" . URL_BASE);
         }else{
-            unset($_SESSION[SESSION_LOGIN]);
-            echo "usuario não encontrado";
+            unset($_SESSION[SESSION_LOGIN]);            
+            echo "<script>alert('usuario ou senha nao encontrados')</script>";
+            $dados['view'] = "login";
+            $this->load("login", $dados);         
         } 
 
     }

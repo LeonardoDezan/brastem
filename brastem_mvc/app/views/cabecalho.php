@@ -5,14 +5,15 @@
 				<nav class="menu">
 					<ul>
 						<li><a href="<?php echo URL_BASE . "Home"; ?>">Home</a></li>
-						<li class="sub"><a href="">Cadastros</a>
+						<li class="sub"><a href="<?php echo URL_BASE . "Clientes"; ?>">Cadastros</a>
 							<ul>
 								<li><a href="<?php echo URL_BASE . "Clientes"; ?>">Cliente</a></li>
 								<li><a href="<?php echo URL_BASE . "Produtos"; ?>">Produto</a></li>
 							</ul>
 						</li>
-						<li class="sub"><a href="">Estoques</a>
+						<li class="sub"><a href="<?php echo URL_BASE . "Estoque"; ?>">Estoques</a>
 							<ul>
+								<li><a href="<?php echo URL_BASE . "Estoque"; ?>">Controle do Estoque</a></li>
 								<li><a href="<?php echo URL_BASE . "Entradas"; ?>">Entradas de produtos</a></li>
 								<li><a href="saida-produto.html">Saída de produtos</a></li>
 							</ul>
