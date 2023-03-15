@@ -2,12 +2,12 @@
 				<div class="radius-8 bg-padrao pt-2 px-4 pb-4">
 					<div class="rows">
 						<div class="col-12 pt-2 d-flex text-between">
-							<h1 class="text-roxo h2 m-0"><i class="fas fa-sign-out-alt m-0 h2 text-amarelo"></i> Entrada de estoque</h1>
+							<h1 class="text-roxo h2 m-0"><i class="fas fa-sign-out-alt m-0 h2 text-amarelo"></i> Saída de estoque</h1>
 							
 						</div>	
 					</div>
 					<div >
-				<form action="<?php echo URL_BASE . "Entradas/salvar"; ?>" method="POST">
+				<form action="<?php echo URL_BASE . "Saidas/salvar"; ?>" method="POST">
 					<div class="rows mt-0">
 						<div class="col-6 position-relative">
 							<label class="text-label">Produto</label>
@@ -26,19 +26,29 @@
 				
 						</div>
 						<div class="col-3 position-relative">
-							<label class="text-label">Estoque Atual</label>
-							<input type="text" id="money" name="" class="form-campo">
+							<label class="text-label">ESTOQUE ATUAL</label>
+							<input type="text" id="money" name="valor_entrada" class="form-campo">
 							<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>quantidade</b> tem quer ser maior que <b>0</b> <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
 						</div>
 
 						<div class="col-3 position-relative">
-							<label class="text-label">Quantidade de entrada</label>
+							<label class="text-label">Quantidade de Saída</label>
 							<input type="number" id="quantidade" name="quantidade" class="form-campo" required>
 							<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>quantidade</b> tem quer ser maior que <b>0</b> <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->
 				
-						</div>			
-
+						</div>
+						
+						<div class="col-6 position-relative">
+							<label class="text-label">MOTIVO DA SAIDA</label>
+							<input type="text" id="" name="tipo_saida" class="form-campo" required>
+							<!-- <small href="" class="msg msg-vermelho h6 mt-1 p-1"><i class="fas fa-exclamation-triangle"></i> O Campo <b>quantidade</b> tem quer ser maior que <b>0</b> <a href="javascript:;" onclick="fecharMsg()" class="fas fa-times float-right"></a></small> -->				
+						</div>
+						
+						<div class="col-6 position-relative">
+								<!-- Espaço vazio -->
+						</div>
+								
 						<div class="col-2 mt-4">
 							<input type="submit" name="" value="Inserir" class="btn btn-amarelo width-100">
 						</div>
@@ -56,19 +66,15 @@
                             <th>#</th>                
                             <th>Produto</th>
                             <th>Quantidade</th>
-                            <th>Valor</th>
-                            <th>Subtotal</th>
                             <th>Ações</th>
                           </tr>
                         </thead>
                         <tbody>
-							<?php foreach($entradas as $entradas){ ?>
+							<?php foreach($saidas as $saidas){ ?>
                             	<tr>
-									<td align="center"><?php echo $entradas->id_entrada; ?></td>
-									<td align="center"><?php echo $entradas->produto; ?></td>
-									<td align="center"><?php echo $entradas->quantidade; ?></td>
-									<td align="center"><?php echo $entradas->valor_entrada; ?></td>
-									<td align="center"><?php echo $entradas->subtotal_entrada; ?></td>
+									<td align="center"><?php echo $saidas->id_saida; ?></td>
+									<td align="center"><?php echo $saidas->produto; ?></td>
+									<td align="center"><?php echo $saidas->quantidade; ?></td>
 									<td align="center">
 									<a href="#" class="btn btn-verde" title="Editar Usuário"><i class="ico-editar"></i></a>
 									<a href="#" class="btn btn-vermelho" title="Excluir Usuário"><i class="ico-excluir"></i></a>

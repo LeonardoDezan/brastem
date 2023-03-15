@@ -15,7 +15,7 @@
 							<ul>
 								<li><a href="<?php echo URL_BASE . "Estoque"; ?>">Controle do Estoque</a></li>
 								<li><a href="<?php echo URL_BASE . "Entradas"; ?>">Entradas de produtos</a></li>
-								<li><a href="saida-produto.html">Saída de produtos</a></li>
+								<li><a href="<?php echo URL_BASE . "Saidas"; ?>">Saída de produtos</a></li>
 							</ul>
 						</li>
 						</li>
