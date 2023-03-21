@@ -17,16 +17,22 @@ class SaidasController extends Controller{
     }
 
     public function salvar(){
-        $objProdutos = new Produtos();
-        $objSaidas = new Saidas();
-        $saidas = $_POST;
-        $id = $objSaidas->inserir($saidas);
-        if($id){
-            $objProdutos->AtualizarEstoque($_POST["id_produto"], -$_POST["quantidade"]);
+        $objProdutos    = new Produtos();
+        $objSaidas      = new Saidas();
+        $saidas         = $_POST;
+        $produto        = $objProdutos->getProduto($_POST["id_produto"]);
+        if($produto->estoque < $_POST["quantidade"]){
+            echo "<script>alert('QUANTIDADE DE SAÍDA MENOR DO QUE A QUANTIDADE EM ESTOQUE. CLIQUE EM OK E VOLTE A PÁGINA.')</script>";
+            exit;
+        }else{
+            $id = $objSaidas->inserir($saidas);
+            if($id){
+                $objProdutos->AtualizarEstoque($_POST["id_produto"], -$_POST["quantidade"]);
+                header("location:" . URL_BASE . "Saidas");
+            }
+
         }
-
-        header("location:" . URL_BASE . "Saidas");
-
+ 
     }
 
 }

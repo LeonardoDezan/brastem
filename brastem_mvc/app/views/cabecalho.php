@@ -19,7 +19,7 @@
 							</ul>
 						</li>
 						</li>
-						<li><a href="vendas.html">Vendas</a></li>
+						<li><a href="<?php echo URL_BASE . "Venda"; ?>">Vendas</a></li>
 						<li class="sub"><a href="">Consultas</a>
 							<ul>
 								<li><a href="consulta-entrada.html">Entradas</a></li>
