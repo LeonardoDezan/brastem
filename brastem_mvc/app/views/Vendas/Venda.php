@@ -1,7 +1,7 @@
 <div class="base-form">
 				<div class="radius-8 bg-padrao pt-2 px-4 pb-4 mb-3">
 					<div class="rows">
-						<div class="col-12 pt-2 mb-3"><h1 class="text-branco h2 mb-0"><i class="fas fa-cash-register mb-0 h2 text-amarelo"></i> Nova Venda</h1></div>
+						<div class="col-12 pt-2 mb-3"><h1 class="text-branco h2 mb-0"><a href=""> Nova Venda</a> </h1></div>
 						<div class="col-2">
 							<div class="bg-padrao alt branco width-100">
 								<label class="label m-0 pb-1 text-branco"><i class="fas fa-asterisk"></i> Código</label>
