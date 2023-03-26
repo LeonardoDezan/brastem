@@ -12,13 +12,13 @@
 							<div class="bg-padrao alt branco width-100">
 								<select  name="cliente" id=""></select>
 								
-								<p class="text-branco">Manoel jailton sousa</p>
+								<p class="text-branco"></p>
 							</div>
 						</div>
 						<div class="col-5">
 							<div class="bg-padrao alt branco width-100">
 								<label class="label m-0 pb-1 text-branco"><i class="fas fa-asterisk"></i> Email</label>
-								<p class="text-branco">mjailton@gmail.com</p>
+								<p class="text-branco"></p>
 							</div>
 						</div>
 					</div>		
