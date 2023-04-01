@@ -99,3 +99,11 @@
 				</div>
 				
 			</div>
+
+
+
+            <select class="form-campo" name="nome_cliente" id="nome_cliente" onchange="selecionarCliente()">
+									<option value="">Escolha um cliente</option>
+									<?php foreach($clientes as $cliente){
+										echo "<option value='$cliente->id_clientes'>$cliente->nome_cliente</option>";
+									}?>
